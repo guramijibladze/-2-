@@ -1,5 +1,5 @@
 <?php
-   include('question.php');
+   require('question.php');
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<form action="" method="post" enctype="multipart/form-data">
+	<form action="submit.php" method="POST" >
 		<?php foreach($quizz as $qIndex => $question): ?>
 
 		<h3><?php echo $question['title']  ?></h3>
